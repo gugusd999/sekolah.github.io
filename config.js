@@ -9,11 +9,12 @@ function iconOut() {
 
 
 var footer = function(){ return div()
-          .css("width", "250px")
+          .css("width", "200px")
           .css("position", "fixed")
           .css("bottom", "10px")
-          .css("left", "calc(50% - (250px / 2))")
+          .css("left", "calc(50% - 100px)")
           .css("color", "white")
+          .css("text-align", "center")
           .child(
               icon('fab fa-whatsapp').mouseover(iconOver).mouseout(iconOut).get()
            )

@@ -125,7 +125,8 @@ function flotDelete(el, width, h){
 }
 
 function barR(el, width, height){
-    if (width < 767) {
+	//alert(width)
+    if (width <= 767) {
         el.style.background = 'white';
         setTimeout(function(){
             el.childNodes.forEach(function(elm){
@@ -268,4 +269,3 @@ var nav = div().class("navbar navbar-default navbar-fixed-top")
                 ).get()
             ).get()
     ).get();
-

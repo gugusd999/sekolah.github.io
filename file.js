@@ -67,7 +67,9 @@ function el(el) {
         window.addEventListener('resize', function(e){
             width = e.target.outerWidth;
             height = e.target.outerHeight;
-            func(gopy.el, width, height);
+            inWidth = e.target.innerWidth;
+            inHeight = e.target.innerHeight;
+            func(gopy.el, width, height, inWidth, inHeight);
         },gopy)
         return gopy;
     }
@@ -75,7 +77,9 @@ function el(el) {
         var gopy = this;
         var width = window.outerWidth;
         var height = window.outerHeight;
-        func(gopy.el, width, height);
+        var inWidth = window.innerWidth;
+        var inHeight = window.innerHeight;
+        func(gopy.el, width, height, inWidth, inHeight);
         return gopy;
     }
     obj.mouseout = function (func) {

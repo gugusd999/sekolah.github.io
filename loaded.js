@@ -4,6 +4,19 @@ var landing = {
     minHeight: "100vh"
 }
 
+function opensize(el, w, h, iw, ih){
+	var css = {
+       "margin-top": "30px",
+       "min-height": (h-120)+"px",
+       "max-height": (h-120)+"px",
+       "overflow-y": "auto"
+     }
+	Object.keys(css).forEach(function(item){
+		el.style[item] = css[item];
+	}, el)
+	
+}
+
 var modal = div()
     .id('root')
     .name('ola')
@@ -15,13 +28,9 @@ var modal = div()
             .child(
                 div()
                 .class("container")
+                .onresize(opensize)
+                .onload(opensize)
                 .id('contain')
-                .css({
-                    "margin-top": "30px",
-                    "min-height": "calc(100vh - 120px)",
-                    "max-height": "calc(100vh - 120px)",
-                    "overflow-y": "auto"
-                })
                 .child(
                     homePage
                 )
