@@ -18,8 +18,8 @@ var modal = div()
                 .id('contain')
                 .css({
                     "margin-top": "30px",
-                    "min-height": "calc(100vh - 150px)",
-                    "max-height": "calc(100vh - 150px)",
+                    "min-height": "calc(100vh - 120px)",
+                    "max-height": "calc(100vh - 120px)",
                     "overflow-y": "auto"
                 })
                 .child(

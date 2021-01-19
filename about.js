@@ -39,24 +39,7 @@ var About = div().class("row").id("pageid").css("color", "white")
         ).get()
     )
     .child(
-        div()
-            .css("width", "250px")
-            .css("position", "fixed")
-            .css("bottom", "25px")
-            .css("left", "calc(50% - (250px / 2))")
-            .child(
-                icon('fab fa-whatsapp').mouseover(iconOver).mouseout(iconOut).get()
-            )
-            .child(
-                icon('fab fa-telegram').mouseover(iconOver).mouseout(iconOut).get()
-            )
-            .child(
-                icon('fab fa-instagram').mouseover(iconOver).mouseout(iconOut).get()
-            )
-            .child(
-                icon('fab fa-linkedin').mouseover(iconOver).mouseout(iconOut).get()
-            )
-            .get()
+        footer()
     )
     .get()
 
@@ -113,25 +96,7 @@ var contact = div().class("row").id("pageid")
                 ).get()
             )
             .child(
-                div()
-                .css("width", "250px")
-                .css("position", "fixed")
-                .css("bottom", "25px")
-                .css("left", "calc(50% - (250px / 2))")
-                .css("color", "white")
-                    .child(
-                        icon('fab fa-whatsapp').mouseover(iconOver).mouseout(iconOut).get()
-                    )
-                    .child(
-                        icon('fab fa-telegram').mouseover(iconOver).mouseout(iconOut).get()
-                    )
-                    .child(
-                        icon('fab fa-instagram').mouseover(iconOver).mouseout(iconOut).get()
-                    )
-                    .child(
-                        icon('fab fa-linkedin').mouseover(iconOver).mouseout(iconOut).get()
-                    )
-                    .get()
+                footer()
             )
             .get()
     )
